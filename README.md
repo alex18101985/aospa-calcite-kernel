@@ -1,6 +1,5 @@
 # AOSPA Calcite Kernel
 
-- Added Westwood TCP (set as default)
 - Built with latest Clang
 
 # Include workflow file to build KernelSU and KernelSU-Next LKM module
