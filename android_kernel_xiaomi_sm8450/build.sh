@@ -5,10 +5,10 @@
 
 SECONDS=0 # start builtin bash timer
 KP_ROOT="$(realpath ../..)"
-TC_DIR="$KP_ROOT/prebuilts-master/clang/host/linux-x86/clang-r596125"
+TC_DIR="$KP_ROOT/prebuilts-master/clang/host/linux-x86/clang-r614150"
 PREBUILTS_DIR="$KP_ROOT/prebuilts/kernel-build-tools/linux-x86"
-BRANCH="beryl"
-KERNEL_NAME="beryl"
+BRANCH="calcite"
+KERNEL_NAME="calcite"
 MODULES_REPO="sm8450-modules"
 DT_REPO="sm8450-devicetrees"
 
@@ -61,7 +61,6 @@ VDLKM_DIR="$KERNEL_DIR/vendor_dlkm"
 DEFCONFIG="gki_defconfig"
 DEFCONFIGS="vendor/waipio_GKI.config \
 vendor/xiaomi_GKI.config \
-vendor/westwood.config \
 vendor/debugfs.config"
 
 MODULES_SRC="../$MODULES_REPO/qcom/opensource"
