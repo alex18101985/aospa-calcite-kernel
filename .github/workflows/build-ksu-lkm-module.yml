@@ -19,7 +19,7 @@ jobs:
           remove_packages_one_command: true
           remove_folders: "/usr/share/swift /usr/share/miniconda /usr/share/az* /usr/local/lib/node_modules /usr/local/share/chromium /usr/local/share/powershell /usr/local/julia /usr/local/aws-cli /usr/local/aws-sam-cli /usr/share/gradle"
           rm_cmd: "rmz"
-          rmz_version: "3.1.1"
+          rmz_version: "3.2.0"
           testing: false
       - name: Set swap space
         uses: pierotofy/set-swap-space@master
@@ -78,7 +78,7 @@ jobs:
           export PATH="$(realpath ../../clang/${CLANG_DIR}/bin):$PATH"
           ./build.sh marble --only-modules
       - name: Upload LKM module artifact
-        uses: actions/upload-artifact@v7.0.1
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: ksu-lkm-module
           path: kernel_platform/xiaomi/sm8450/out/kernelsu.ko
