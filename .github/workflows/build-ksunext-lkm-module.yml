@@ -2,7 +2,7 @@ name: KernelSU-Next LKM Module
 on:
   workflow_dispatch:
 env:
-  CLANG_DIR: clang-r614150
+  CLANG_DIR: clang-r596125
 jobs:
   build-ksunext-lkm-module:
     runs-on: ubuntu-22.04
@@ -52,7 +52,7 @@ jobs:
         uses: actions/cache@v6.1.0
         with:
           path: kernel_platform/clang
-          key: clang-r614150
+          key: clang-r596125
       - name: Setup Clang
         run: |
           mkdir -p kernel_platform/clang
