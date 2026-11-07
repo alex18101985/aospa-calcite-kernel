@@ -2,7 +2,7 @@
 
 - Built with latest Clang
 
-# Include workflow file to build KernelSU-Next LKM module
+# Include workflow file to build KernelSU LKM module
 
 <p>&nbsp;</p>
 
